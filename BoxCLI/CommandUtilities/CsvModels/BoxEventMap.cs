@@ -15,7 +15,6 @@ namespace BoxCLI.CommandUtilities.CsvModels
             Map(m => m.SessionId);
             References<BoxEntityOnObjectMap>(m => m.Source).Prefix("Source");
             References<BoxUserOnObjectMap>(m => m.CreatedBy).Prefix("CreatedBy");
-            References
         }
     }
 }
