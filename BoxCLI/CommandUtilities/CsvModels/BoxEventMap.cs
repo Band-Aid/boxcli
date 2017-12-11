@@ -12,8 +12,10 @@ namespace BoxCLI.CommandUtilities.CsvModels
             Map(m => m.EventType);
             Map(m => m.IPAddress);
             Map(m => m.SessionId);
+            Map(m => m.CreatedAt);
             References<BoxEntityOnObjectMap>(m => m.Source).Prefix("Source");
             References<BoxUserOnObjectMap>(m => m.CreatedBy).Prefix("CreatedBy");
+            References
         }
     }
 }
